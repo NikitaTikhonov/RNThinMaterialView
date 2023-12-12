@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TodoListNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TodoListNativeTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-TodoListNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TodoListNative.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-TodoListNative-TodoListNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TodoListNative-TodoListNativeTests.a */; };
+		1F3A6CCB015D354C2F32BE5C /* libPods-TodoListNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1B5AC91508CE42EE1218A /* libPods-TodoListNative.a */; };
+		317D3E752B275B110015FC59 /* HolidayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E742B275B110015FC59 /* HolidayButton.swift */; };
+		317D3E772B275B270015FC59 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E762B275B270015FC59 /* utils.swift */; };
+		317D3E7B2B27890B0015FC59 /* HolidayGetterEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */; };
+		317D3E832B278E6D0015FC59 /* HolidayButtonViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E822B278E6D0015FC59 /* HolidayButtonViewManager.swift */; };
+		317D3E852B278E9D0015FC59 /* HolidayButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E842B278E9D0015FC59 /* HolidayButtonManager.m */; };
+		31AA08C22B289E1800ABDB3E /* HoldayButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA08C12B289E1800ABDB3E /* HoldayButtonState.swift */; };
+		31AA08C42B28A8A100ABDB3E /* HolidayButtonEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AA08C32B28A8A100ABDB3E /* HolidayButtonEventEmitter.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EA738EC0CF03D1C4372F0893 /* libPods-TodoListNative-TodoListNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62901B4247E8A30A50C07447 /* libPods-TodoListNative-TodoListNativeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +37,27 @@
 		00E356EE1AD99517003FC87E /* TodoListNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TodoListNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListNativeTests.m; sourceTree = "<group>"; };
+		00EDB87C7F57E154B09F5E2D /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative-TodoListNativeTests.release.xcconfig"; path = "Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TodoListNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TodoListNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TodoListNative/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TodoListNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodoListNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TodoListNative/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-TodoListNative-TodoListNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TodoListNative-TodoListNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-TodoListNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative.debug.xcconfig"; path = "Target Support Files/Pods-TodoListNative/Pods-TodoListNative.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-TodoListNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative.release.xcconfig"; path = "Target Support Files/Pods-TodoListNative/Pods-TodoListNative.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative-TodoListNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-TodoListNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TodoListNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		317D3E742B275B110015FC59 /* HolidayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayButton.swift; sourceTree = "<group>"; };
+		317D3E762B275B270015FC59 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayGetterEventEmitter.swift; sourceTree = "<group>"; };
+		317D3E822B278E6D0015FC59 /* HolidayButtonViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayButtonViewManager.swift; sourceTree = "<group>"; };
+		317D3E842B278E9D0015FC59 /* HolidayButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HolidayButtonManager.m; sourceTree = "<group>"; };
+		31AA08C12B289E1800ABDB3E /* HoldayButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldayButtonState.swift; sourceTree = "<group>"; };
+		31AA08C32B28A8A100ABDB3E /* HolidayButtonEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HolidayButtonEventEmitter.m; sourceTree = "<group>"; };
+		31AC9EFD2B223B38002FD523 /* TodoListNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoListNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		62901B4247E8A30A50C07447 /* libPods-TodoListNative-TodoListNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TodoListNative-TodoListNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TodoListNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative-TodoListNativeTests.release.xcconfig"; path = "Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3D3A11010C9E628939643C5 /* Pods-TodoListNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative.release.xcconfig"; path = "Target Support Files/Pods-TodoListNative/Pods-TodoListNative.release.xcconfig"; sourceTree = "<group>"; };
+		B5C1B5AC91508CE42EE1218A /* libPods-TodoListNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TodoListNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12D792ADB89DA573FAE1901 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative-TodoListNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7AF5980A1702DFE20FA89C3 /* Pods-TodoListNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListNative.debug.xcconfig"; path = "Target Support Files/Pods-TodoListNative/Pods-TodoListNative.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-TodoListNative-TodoListNativeTests.a in Frameworks */,
+				EA738EC0CF03D1C4372F0893 /* libPods-TodoListNative-TodoListNativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-TodoListNative.a in Frameworks */,
+				1F3A6CCB015D354C2F32BE5C /* libPods-TodoListNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +101,19 @@
 		13B07FAE1A68108700A75B9A /* TodoListNative */ = {
 			isa = PBXGroup;
 			children = (
+				31AA08C02B289DFA00ABDB3E /* HolidayButton */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */,
+				31AA08C32B28A8A100ABDB3E /* HolidayButtonEventEmitter.m */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				31AC9EFD2B223B38002FD523 /* TodoListNative-Bridging-Header.h */,
+				317D3E762B275B270015FC59 /* utils.swift */,
+				317D3E822B278E6D0015FC59 /* HolidayButtonViewManager.swift */,
+				317D3E842B278E9D0015FC59 /* HolidayButtonManager.m */,
 			);
 			name = TodoListNative;
 			sourceTree = "<group>";
@@ -100,10 +122,19 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-TodoListNative.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TodoListNative-TodoListNativeTests.a */,
+				B5C1B5AC91508CE42EE1218A /* libPods-TodoListNative.a */,
+				62901B4247E8A30A50C07447 /* libPods-TodoListNative-TodoListNativeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31AA08C02B289DFA00ABDB3E /* HolidayButton */ = {
+			isa = PBXGroup;
+			children = (
+				317D3E742B275B110015FC59 /* HolidayButton.swift */,
+				31AA08C12B289E1800ABDB3E /* HoldayButtonState.swift */,
+			);
+			name = HolidayButton;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -140,10 +171,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-TodoListNative.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-TodoListNative.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */,
+				D7AF5980A1702DFE20FA89C3 /* Pods-TodoListNative.debug.xcconfig */,
+				A3D3A11010C9E628939643C5 /* Pods-TodoListNative.release.xcconfig */,
+				D12D792ADB89DA573FAE1901 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */,
+				00EDB87C7F57E154B09F5E2D /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TodoListNativeTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				5364858881BAB324E9BD863E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				5D85BFBAC62B970F96344DB1 /* [CP] Embed Pods Frameworks */,
+				2905D408477DB70D8264634C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +207,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TodoListNative" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				F79967C8BF5BFBC2C4E04E7A /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				CC9D42A4564BAC89B96E3D60 /* [CP] Embed Pods Frameworks */,
+				9B32C8B8477A3E5ADEF8AE02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,7 +237,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -265,24 +296,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		2905D408477DB70D8264634C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		5364858881BAB324E9BD863E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +335,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		5D85BFBAC62B970F96344DB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B32C8B8477A3E5ADEF8AE02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9D42A4564BAC89B96E3D60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79967C8BF5BFBC2C4E04E7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,57 +408,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative/Pods-TodoListNative-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoListNative-TodoListNativeTests/Pods-TodoListNative-TodoListNativeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -393,7 +424,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				31AA08C42B28A8A100ABDB3E /* HolidayButtonEventEmitter.m in Sources */,
+				317D3E832B278E6D0015FC59 /* HolidayButtonViewManager.swift in Sources */,
+				317D3E852B278E9D0015FC59 /* HolidayButtonManager.m in Sources */,
+				317D3E772B275B270015FC59 /* utils.swift in Sources */,
+				317D3E7B2B27890B0015FC59 /* HolidayGetterEventEmitter.swift in Sources */,
+				317D3E752B275B110015FC59 /* HolidayButton.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				31AA08C22B289E1800ABDB3E /* HoldayButtonState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +448,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */;
+			baseConfigurationReference = D12D792ADB89DA573FAE1901 /* Pods-TodoListNative-TodoListNativeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -437,8 +476,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */;
+			baseConfigurationReference = 00EDB87C7F57E154B09F5E2D /* Pods-TodoListNative-TodoListNativeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TodoListNativeTests/Info.plist;
@@ -461,13 +501,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-TodoListNative.debug.xcconfig */;
+			baseConfigurationReference = D7AF5980A1702DFE20FA89C3 /* Pods-TodoListNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TodoListNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TodoListNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -488,12 +530,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-TodoListNative.release.xcconfig */;
+			baseConfigurationReference = A3D3A11010C9E628939643C5 /* Pods-TodoListNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = TodoListNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TodoListNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
