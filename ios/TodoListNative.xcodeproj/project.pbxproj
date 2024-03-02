@@ -12,6 +12,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1F3A6CCB015D354C2F32BE5C /* libPods-TodoListNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1B5AC91508CE42EE1218A /* libPods-TodoListNative.a */; };
+		316645162B29C32600F6D0E1 /* ThinMaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316645152B29C32600F6D0E1 /* ThinMaterialView.swift */; };
+		316645192B29C41200F6D0E1 /* ThinMaterialViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316645182B29C41200F6D0E1 /* ThinMaterialViewManager.swift */; };
+		3166451B2B29C46600F6D0E1 /* ThinMaterialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166451A2B29C46600F6D0E1 /* ThinMaterialManager.m */; };
+		3166451D2B29E09600F6D0E1 /* MaterialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166451C2B29E09600F6D0E1 /* MaterialState.swift */; };
 		317D3E752B275B110015FC59 /* HolidayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E742B275B110015FC59 /* HolidayButton.swift */; };
 		317D3E772B275B270015FC59 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E762B275B270015FC59 /* utils.swift */; };
 		317D3E7B2B27890B0015FC59 /* HolidayGetterEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */; };
@@ -44,6 +48,10 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TodoListNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodoListNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TodoListNative/main.m; sourceTree = "<group>"; };
+		316645152B29C32600F6D0E1 /* ThinMaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinMaterialView.swift; sourceTree = "<group>"; };
+		316645182B29C41200F6D0E1 /* ThinMaterialViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinMaterialViewManager.swift; sourceTree = "<group>"; };
+		3166451A2B29C46600F6D0E1 /* ThinMaterialManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThinMaterialManager.m; sourceTree = "<group>"; };
+		3166451C2B29E09600F6D0E1 /* MaterialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialState.swift; sourceTree = "<group>"; };
 		317D3E742B275B110015FC59 /* HolidayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayButton.swift; sourceTree = "<group>"; };
 		317D3E762B275B270015FC59 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayGetterEventEmitter.swift; sourceTree = "<group>"; };
@@ -101,19 +109,16 @@
 		13B07FAE1A68108700A75B9A /* TodoListNative */ = {
 			isa = PBXGroup;
 			children = (
+				316645172B29C3D200F6D0E1 /* ThinMaterialView */,
 				31AA08C02B289DFA00ABDB3E /* HolidayButton */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */,
-				31AA08C32B28A8A100ABDB3E /* HolidayButtonEventEmitter.m */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				31AC9EFD2B223B38002FD523 /* TodoListNative-Bridging-Header.h */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				31AC9EFD2B223B38002FD523 /* TodoListNative-Bridging-Header.h */,
 				317D3E762B275B270015FC59 /* utils.swift */,
-				317D3E822B278E6D0015FC59 /* HolidayButtonViewManager.swift */,
-				317D3E842B278E9D0015FC59 /* HolidayButtonManager.m */,
 			);
 			name = TodoListNative;
 			sourceTree = "<group>";
@@ -128,9 +133,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		316645172B29C3D200F6D0E1 /* ThinMaterialView */ = {
+			isa = PBXGroup;
+			children = (
+				316645152B29C32600F6D0E1 /* ThinMaterialView.swift */,
+				316645182B29C41200F6D0E1 /* ThinMaterialViewManager.swift */,
+				3166451A2B29C46600F6D0E1 /* ThinMaterialManager.m */,
+				3166451C2B29E09600F6D0E1 /* MaterialState.swift */,
+			);
+			name = ThinMaterialView;
+			sourceTree = "<group>";
+		};
 		31AA08C02B289DFA00ABDB3E /* HolidayButton */ = {
 			isa = PBXGroup;
 			children = (
+				31AA08C32B28A8A100ABDB3E /* HolidayButtonEventEmitter.m */,
+				317D3E7A2B27890B0015FC59 /* HolidayGetterEventEmitter.swift */,
+				317D3E822B278E6D0015FC59 /* HolidayButtonViewManager.swift */,
+				317D3E842B278E9D0015FC59 /* HolidayButtonManager.m */,
 				317D3E742B275B110015FC59 /* HolidayButton.swift */,
 				31AA08C12B289E1800ABDB3E /* HoldayButtonState.swift */,
 			);
@@ -426,11 +446,15 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				31AA08C42B28A8A100ABDB3E /* HolidayButtonEventEmitter.m in Sources */,
 				317D3E832B278E6D0015FC59 /* HolidayButtonViewManager.swift in Sources */,
+				3166451D2B29E09600F6D0E1 /* MaterialState.swift in Sources */,
 				317D3E852B278E9D0015FC59 /* HolidayButtonManager.m in Sources */,
+				3166451B2B29C46600F6D0E1 /* ThinMaterialManager.m in Sources */,
+				316645162B29C32600F6D0E1 /* ThinMaterialView.swift in Sources */,
 				317D3E772B275B270015FC59 /* utils.swift in Sources */,
 				317D3E7B2B27890B0015FC59 /* HolidayGetterEventEmitter.swift in Sources */,
 				317D3E752B275B110015FC59 /* HolidayButton.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				316645192B29C41200F6D0E1 /* ThinMaterialViewManager.swift in Sources */,
 				31AA08C22B289E1800ABDB3E /* HoldayButtonState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
