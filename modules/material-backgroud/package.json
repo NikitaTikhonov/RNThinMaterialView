@@ -1,0 +1,14 @@
+{
+  "name": "react-native-material-backgroud",
+  "version": "0.0.0",
+  "description": "Material SwiftUI reuse",
+  "main": "src/index",
+  "codegenConfig": {
+    "name": "RNMaterialBackgroudViewSpec",
+    "type": "components",
+    "jsSrcsDir": "src"
+  },
+  "author": " <> ()",
+  "license": "UNLICENSED",
+  "homepage": "#readme"
+}

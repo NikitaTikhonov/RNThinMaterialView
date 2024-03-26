@@ -8,26 +8,13 @@
 import React, {useState} from 'react';
 import {ImageBackground, StyleSheet, Text} from 'react-native';
 import {HolidayButton, ThinMaterialView} from './components';
+import {MaterialBackgroudView} from 'react-native-material-backgroud';
 
 const image = require('./assets/poster.webp');
 function App(): React.JSX.Element {
   const [text, setText] = useState('');
   return (
-    <ImageBackground source={image} style={styles.container}>
-      <ThinMaterialView
-        enabled={true}
-        material={'ultrathin'}
-        style={{
-          width: '100%',
-          height: '100%',
-          padding: 20,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
-        <HolidayButton text={'Get Holiday'} onPress={setText} />
-        <Text>{text}</Text>
-      </ThinMaterialView>
-    </ImageBackground>
+    <MaterialBackgroudView style={styles.container} color={'#666192'}/>
   );
 }
 
